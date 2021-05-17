@@ -219,7 +219,7 @@ variable "enable_metrics_provider" {
   description = "Flag to enable metrics server provider, default false"
 }
 
-variable "dd_agent_site" {
+variable "datadog_agent_site" {
   type        = string
   default     = "datadoghq.com"
   description = "The datadog endpoint to send metrics to, default datadoghq.com"
