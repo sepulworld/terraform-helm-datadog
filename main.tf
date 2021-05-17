@@ -56,6 +56,11 @@ resource "helm_release" "terraform-k8s-datadog" {
     value = var.enable_metrics_provider
   }
 
+  set {
+    name  = "datadog.site"
+    value = var.dd_agent_site
+  }
+
   dynamic "set" {
     for_each = var.settings
     content {
