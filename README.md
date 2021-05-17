@@ -39,6 +39,7 @@ No modules.
 | <a name="input_create_namespace"></a> [create\_namespace](#input\_create\_namespace) | Have helm\_resource create the namespace, default true | `bool` | `true` | no |
 | <a name="input_datadog_api_key"></a> [datadog\_api\_key](#input\_datadog\_api\_key) | Provide the datadog API key to be used with datadog agent pods, default empty string | `string` | `""` | no |
 | <a name="input_datadog_app_key"></a> [datadog\_app\_key](#input\_datadog\_app\_key) | Provide the datadog APP key to be used with datadog agent pods, default empty string | `string` | `""` | no |
+| <a name="input_dd_agent_site"></a> [dd\_agent\_site](#input\_dd\_agent\_site) | The datadog endpoint to send metrics to, default datadoghq.com | `string` | `"datadoghq.com"` | no |
 | <a name="input_dependency_update"></a> [dependency\_update](#input\_dependency\_update) | (Optional) Runs helm dependency update before installing the chart. Defaults to false. | `bool` | `false` | no |
 | <a name="input_description"></a> [description](#input\_description) | (Optional) Set release description attribute (visible in the history). | `string` | `"Terraform driven Helm release of Datadog Helm chart"` | no |
 | <a name="input_devel"></a> [devel](#input\_devel) | (Optional) Use chart development versions, too. Equivalent to version '>0.0.0-0'. If version is set, this is ignored. | `bool` | `false` | no |

@@ -220,9 +220,9 @@ variable "enable_metrics_provider" {
 }
 
 variable "dd_agent_site" {
-  type = string
-  default = "datadoghq.com"
-  description "The datadog endpoint to send metrics to, default datadoghq.com"
+  type        = string
+  default     = "datadoghq.com"
+  description = "The datadog endpoint to send metrics to, default datadoghq.com"
 }
 
 variable "values" {
