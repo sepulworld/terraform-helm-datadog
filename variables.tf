@@ -191,7 +191,7 @@ variable "lint" {
 
 variable "k8s_namespace" {
   type        = string
-  default     = "kube-addons"
+  default     = "datadog"
   description = "The K8s namespace in which to install the Helm chart, default: 'default'"
 }
 
