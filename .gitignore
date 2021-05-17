@@ -1,0 +1,3 @@
+.terraform*
+tests/local_tests/.terraform*
+tests/local_tests/terraform*
