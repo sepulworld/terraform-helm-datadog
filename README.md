@@ -1,12 +1,6 @@
 ## Module Name: terraform-helm-datadog
 #### Description: Deploy Datadog Agents and configurations to a K8s cluster. Powered by the Terraform Helm Provider
 
-### Updated Readme by [terraform-docs](https://terraform-docs.io/user-guide/how-to/)
-
-```
-terraform-docs markdown . --output-file README.md
-```
-
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -80,3 +74,10 @@ No modules.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
+### README.md created with [terraform-docs](https://terraform-docs.io/user-guide/how-to/)
+
+```
+terraform-docs markdown . --output-file README.md
+```
+
