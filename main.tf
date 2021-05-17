@@ -58,7 +58,7 @@ resource "helm_release" "terraform-k8s-datadog" {
 
   set {
     name  = "datadog.site"
-    value = var.dd_agent_site
+    value = var.datadog_agent_site
   }
 
   dynamic "set" {
