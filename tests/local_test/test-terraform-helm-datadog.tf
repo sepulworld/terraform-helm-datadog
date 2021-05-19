@@ -13,8 +13,11 @@ module "terraform-helm-datadog-test" {
   source          = "../../"
   datadog_api_key = var.datadog_api_key
   settings = {
+    // Add tolerations for all taints example
     "agents.tolerations[0].effect"   = "NoSchedule"
     "agents.tolerations[0].operator" = "Exists"
+    // Increase rolling update maxUnavailable example
+    "agents.updateStrategy.rollingUpdate.maxUnavailable" = "30"
   }
 }
 
