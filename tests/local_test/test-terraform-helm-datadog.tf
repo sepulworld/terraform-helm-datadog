@@ -13,8 +13,8 @@ module "terraform-helm-datadog-test" {
   source          = "../../"
   datadog_api_key = var.datadog_api_key
   settings = {
-    "agent.tolerations[0].effect"   = "NoSchedule"
-    "agent.tolerations[0].operator" = "Exists"
+    "agents.tolerations[0].effect"   = "NoSchedule"
+    "agents.tolerations[0].operator" = "Exists"
   }
 }
 
