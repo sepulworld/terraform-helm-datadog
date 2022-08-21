@@ -31,9 +31,9 @@ No modules.
 | <a name="input_atomic"></a> [atomic](#input\_atomic) | (Optional) If set, installation process purges chart on fail. The wait flag will be set automatically if atomic is used. Defaults to false. | `bool` | `false` | no |
 | <a name="input_cleanup_on_fail"></a> [cleanup\_on\_fail](#input\_cleanup\_on\_fail) | (Optional) Allow deletion of new resources created in this upgrade when upgrade fails. Defaults to false. | `bool` | `false` | no |
 | <a name="input_create_namespace"></a> [create\_namespace](#input\_create\_namespace) | Have helm\_resource create the namespace, default true | `bool` | `true` | no |
+| <a name="input_datadog_agent_site"></a> [datadog\_agent\_site](#input\_datadog\_agent\_site) | The datadog endpoint to send metrics to, default datadoghq.com | `string` | `"datadoghq.com"` | no |
 | <a name="input_datadog_api_key"></a> [datadog\_api\_key](#input\_datadog\_api\_key) | Provide the datadog API key to be used with datadog agent pods, default empty string | `string` | `""` | no |
 | <a name="input_datadog_app_key"></a> [datadog\_app\_key](#input\_datadog\_app\_key) | Provide the datadog APP key to be used with datadog agent pods, default empty string | `string` | `""` | no |
-| <a name="input_dd_agent_site"></a> [dd\_agent\_site](#input\_dd\_agent\_site) | The datadog endpoint to send metrics to, default datadoghq.com | `string` | `"datadoghq.com"` | no |
 | <a name="input_dependency_update"></a> [dependency\_update](#input\_dependency\_update) | (Optional) Runs helm dependency update before installing the chart. Defaults to false. | `bool` | `false` | no |
 | <a name="input_description"></a> [description](#input\_description) | (Optional) Set release description attribute (visible in the history). | `string` | `"Terraform driven Helm release of Datadog Helm chart"` | no |
 | <a name="input_devel"></a> [devel](#input\_devel) | (Optional) Use chart development versions, too. Equivalent to version '>0.0.0-0'. If version is set, this is ignored. | `bool` | `false` | no |
@@ -47,7 +47,7 @@ No modules.
 | <a name="input_helm_chart_version"></a> [helm\_chart\_version](#input\_helm\_chart\_version) | Version of the Datadog Helm chart to use | `string` | `"2.13.0"` | no |
 | <a name="input_helm_release_name"></a> [helm\_release\_name](#input\_helm\_release\_name) | Helm release name | `string` | `"datadog"` | no |
 | <a name="input_helm_repo_url"></a> [helm\_repo\_url](#input\_helm\_repo\_url) | Helm repository for datadog chart | `string` | `"https://helm.datadoghq.com"` | no |
-| <a name="input_k8s_namespace"></a> [k8s\_namespace](#input\_k8s\_namespace) | The K8s namespace in which to install the Helm chart, default: 'default' | `string` | `"kube-addons"` | no |
+| <a name="input_k8s_namespace"></a> [k8s\_namespace](#input\_k8s\_namespace) | The K8s namespace in which to install the Helm chart, default: 'default' | `string` | `"datadog"` | no |
 | <a name="input_keyring"></a> [keyring](#input\_keyring) | (Optional) Verify the package before installing it. Helm uses a provenance file to verify the integrity of the chart; this must be hosted alongside the chart. For more information see the Helm Documentation. Defaults to false. | `bool` | `false` | no |
 | <a name="input_lint"></a> [lint](#input\_lint) | (Optional) Run the helm chart linter during the plan. Defaults to false. | `bool` | `false` | no |
 | <a name="input_max_history"></a> [max\_history](#input\_max\_history) | (Optional) Maximum number of release versions stored per release. Defaults to 0 (no limit). | `number` | `0` | no |
@@ -72,7 +72,12 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_helm_app_version"></a> [helm\_app\_version](#output\_helm\_app\_version) | n/a |
+| <a name="output_helm_name"></a> [helm\_name](#output\_helm\_name) | n/a |
+| <a name="output_helm_revision"></a> [helm\_revision](#output\_helm\_revision) | n/a |
+| <a name="output_helm_version"></a> [helm\_version](#output\_helm\_version) | n/a |
 <!-- END_TF_DOCS -->
 
 ### README.md created with [terraform-docs](https://terraform-docs.io/user-guide/how-to/)
